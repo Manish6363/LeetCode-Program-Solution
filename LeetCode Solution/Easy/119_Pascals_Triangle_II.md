@@ -11,6 +11,7 @@ Each number in Pascal’s Triangle is calculated using:
 
 # Approach-1 Brute Force [by Building Entire Pascal Triangle]
 Generate all rows from 0 to rowIndex, then return the last row.
+
 **Steps**
 1. Create a list to store rows.
 2. Loop from 0 to rowIndex. 
@@ -44,6 +45,7 @@ class Solution {
 ```
 
 # Approach-2 Better Approach [using Single Array]
+
 **Steps:** 
 1. Create list. 
 2. Add 1. 
@@ -74,6 +76,7 @@ class Solution {
 ```
 
 # Approach-3 Optimal Approach [using Combination Formula]
+
 Key Formula Each element in Pascal’s row: 
 
                n!
@@ -83,6 +86,7 @@ Key Formula Each element in Pascal’s row:
 But computing factorial repeatedly is slow. 
 Instead use: `next = previous × ((n−r)/r+1)`
 This lets us compute values sequentially.
+
 **Steps:** 
 1. Start with 1.
 2. Use formula to compute next value.
