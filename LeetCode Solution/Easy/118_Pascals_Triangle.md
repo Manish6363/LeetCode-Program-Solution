@@ -30,6 +30,7 @@ Examples: `n=5`
 # Approach-1 Brute Force [using nCr Formula]
 For each row `i` and each column `j` Compute: $$value=nCr(i,j)$$  
 So every element is calculated independently.
+
 **Algorithm**
 1. Create result list 
 2. Loop rows from 0 to numRows-1 
@@ -76,6 +77,7 @@ class Solution {
 # Approach-2 Optimal Approach [using Mathematical Row Generation]
 Instead of factorial:
 Use recurrence relation: `next = previous × ((row−col​)/col+1)`
+
 This is Optimal Because:
 - No factorial 
 - No extra loops 
