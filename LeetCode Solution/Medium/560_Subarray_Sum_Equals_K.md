@@ -20,6 +20,7 @@ We need to return the total number of subarrays whose `sum` is equal to the give
 
 # Approach-1 Brute Force
 This uses three loops.
+
 **Steps:**
 1. Generate all possible subarrays 
 2. Calculate the sum of each subarray 
@@ -52,6 +53,7 @@ class Solution {
 
 # Approach-2 Better Approach
 Instead of recalculating the sum every time:
+
 **Steps:**
 1. Fix starting index `i`
 2. Keep adding elements to running `sum`, if `sum` equals `k`, increment `count`
@@ -81,6 +83,7 @@ class Solution {
 ```
 
 # Approach-3 Optimal Approach [using Prefix Sum + HashMap]
+
 Instead of checking every subarray:
 - We store prefix sums in a HashMap.
 - We use the formula: `previousSum = currentSum - k`
