@@ -1,6 +1,7 @@
 ## Problem: 9. Palindrome Number
 link: https://leetcode.com/problems/palindrome-number/
 
+
 # Intuition
 To check whether a number is a palindrome, we need to verify if it reads the same forward and backward. There are multiple ways to achieve this:
 
